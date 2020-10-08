@@ -6,6 +6,7 @@ import optionsIcon from "../images/apps.svg";
 import notificationIcon from "../images/notifications.svg";
 import avatarIcon from "../images/Avatar.png";
 import downIcon from "../images/down-arrow.svg";
+import searchIcon from "../images/search.svg";
 
 const Navbar = () => {
     return (
@@ -14,12 +15,24 @@ const Navbar = () => {
                 <h2 className="brand">ANAHA</h2>
                 <Breadcrum pages={["Patient Profile", "Analytics"]} />
             </div>
-            <input
-                type="text"
-                className="search"
-                // &#128269;
-                placeholder="Search"
-            />
+            <div className="searchContainer">
+                <img
+                    src={searchIcon}
+                    alt="Search Icon"
+                    className="search-icon"
+                />
+                <input
+                    type="text"
+                    className="search"
+                    // &#128269;
+                    placeholder="Search"
+                />
+                <img
+                    src={downIcon}
+                    alt="Search Dropdown"
+                    className="search-dropdown"
+                />
+            </div>
             <div className="navbar-right">
                 <img src={errorIcon} alt="Alert" />
                 <img src={optionsIcon} alt="Options" />
