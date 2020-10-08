@@ -1,0 +1,16 @@
+.breadcrum {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crum {
+    color: black;
+    text-decoration: none;
+}
+
+.crum-arrow {
+    height: 32px;
+}
