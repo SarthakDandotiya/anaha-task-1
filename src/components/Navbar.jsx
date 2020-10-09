@@ -3,10 +3,10 @@ import Breadcrum from "./Breadcrum";
 import "./Navbar.css";
 import errorIcon from "../images/error.svg";
 import optionsIcon from "../images/apps.svg";
-import notificationIcon from "../images/notifications.svg";
 import avatarIcon from "../images/Avatar.png";
 import downIcon from "../images/down-arrow.svg";
 import searchIcon from "../images/search.svg";
+import Notification from "./Notification";
 
 const Navbar = () => {
     return (
@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="navbar-right">
                 <img src={errorIcon} alt="Alert" />
                 <img src={optionsIcon} alt="Options" />
-                <img src={notificationIcon} alt="Notifications" />
+                <Notification count={4} />
                 <div className="avatar">
                     <img src={avatarIcon} alt="Avatar" />
                     <p>Dr.Raquel</p>

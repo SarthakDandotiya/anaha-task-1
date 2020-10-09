@@ -1,0 +1,18 @@
+.notification-container {
+    position: relative;
+}
+
+.notification-container p {
+    position: absolute;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
+    height: 10px;
+    width: 10px;
+    color: #ffffff;
+    background-color: #ff6b6b;
+    top: -4px;
+    right: 4px;
+    padding: 4px;
+    border-radius: 100%;
+}
