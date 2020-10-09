@@ -1,5 +1,5 @@
 import React from "react";
-import SmallChartCard from "./cards/SmallChartCard";
+import ChartCard from "./cards/ChartCard";
 import CustomBarChart1 from "./graphs/CustomBarChart1";
 import CustomBarChart2 from "./graphs/CustomBarChart2";
 import CustomLineChart1 from "./graphs/CustomLineChart1";
@@ -10,25 +10,29 @@ import "./SmallChartContainer.css";
 const SmallChartContainer = () => {
     return (
         <div className="small-chart-container">
-            <SmallChartCard
+            <ChartCard
                 title="Activity"
                 option="Week"
                 chart={<CustomBarChart1 />}
+                flag={true}
             />
-            <SmallChartCard
+            <ChartCard
                 title="Heart Rate"
                 option="Day"
                 chart={<CustomLineChart1 />}
+                flag={true}
             />
-            <SmallChartCard
+            <ChartCard
                 title="Blood Pressure"
                 option="Week"
                 chart={<CustomBarChart2 />}
+                flag={true}
             />
-            <SmallChartCard
+            <ChartCard
                 title="Body Temperature"
                 option="Week"
                 chart={<CustomAreaChart1 />}
+                flag={true}
             />
             <AppointmentCard />
         </div>

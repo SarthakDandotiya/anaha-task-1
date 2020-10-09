@@ -1,16 +1,16 @@
 import React from "react";
-import "./SmallChartCard.css";
+import "./ChartCard.css";
 
 import downIconBlue from "../../images/down-arrow-blue.svg";
 
-const SmallChartCard = ({ title, option, chart }) => {
+const ChartCard = ({ title, option, chart, flag }) => {
     return (
         <div className="small-chart-card">
             <div className="small-chart-card-info">
                 <p>{title}</p>
                 <span>
                     <p>{option}</p>
-                    <img src={downIconBlue} alt="Options" />
+                    {flag && <img src={downIconBlue} alt="Options" />}
                 </span>
             </div>
             <div className="small-chart-card-graph">{chart}</div>
@@ -18,4 +18,4 @@ const SmallChartCard = ({ title, option, chart }) => {
     );
 };
 
-export default SmallChartCard;
+export default ChartCard;

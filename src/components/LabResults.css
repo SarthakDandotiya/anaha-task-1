@@ -1,0 +1,31 @@
+.lab-results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lab-results div {
+    margin-top: 16px;
+    margin-right: 57px;
+}
+
+.lab-results div p {
+    margin-top: 8px;
+}
+
+.lab-results-date {
+    font-size: 12px;
+    color: #999999;
+}
+
+.lab-results-item {
+    font-size: 16px;
+    color: #ac6514;
+}
+
+.lab-results-amount {
+    font-size: 16px;
+    color: #333333;
+}

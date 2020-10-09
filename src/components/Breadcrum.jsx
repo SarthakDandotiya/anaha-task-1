@@ -10,7 +10,7 @@ const Breadcrum = ({ pages }) => {
                 if (i < pages.length - 1) {
                     return (
                         <>
-                            <a href="google.com" className="crum" key={i}>
+                            <a href="google.com" className="crum">
                                 {el}
                                 {/* {` `} &gt; {` `} */}
                             </a>

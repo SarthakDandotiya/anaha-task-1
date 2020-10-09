@@ -1,0 +1,11 @@
+.main-analytics {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-analytics-right {
+    margin-left: 32px;
+}

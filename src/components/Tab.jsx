@@ -1,4 +1,5 @@
 import React from "react";
+import MainAnalytics from "./MainAnalytics";
 import SmallChartContainer from "./SmallChartContainer";
 import "./Tab.css";
 
@@ -6,7 +7,7 @@ const Tab = () => {
     return (
         <div className="tab">
             <SmallChartContainer />
-            {/* Large Graph 3 Other Cards */}
+            <MainAnalytics />
         </div>
     );
 };
