@@ -1,0 +1,20 @@
+.tabs-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tabs-container ul li {
+    padding: 20px 40px;
+    margin: 0 16px 0 0;
+    background-color: #d8d8d8;
+    color: #4b4b4b;
+    border-radius: 16px 16px 0 0;
+}
+
+.tabs-active {
+    color: #ffffff !important;
+    background-color: #137af0 !important;
+}

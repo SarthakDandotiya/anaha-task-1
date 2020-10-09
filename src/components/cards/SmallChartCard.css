@@ -1,0 +1,34 @@
+.small-chart-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: #d3d3d3 solid 1px;
+    border-radius: 12px;
+}
+
+.small-chart-card-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* .small-chart-card-info p,
+.small-chart-card-info img {
+    display: inline-block;
+} */
+
+.small-chart-card-info span {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.small-chart-card-info span img {
+    height: 16px;
+}
