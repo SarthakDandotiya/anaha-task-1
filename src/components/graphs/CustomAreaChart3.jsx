@@ -4,74 +4,62 @@ import { AreaChart, Area, XAxis, Tooltip } from "recharts";
 const data = [
     {
         name: "Mon",
-        uv: 1000,
+        uv: 100,
         pv: 2400,
         amt: 2400,
     },
     {
         name: "Tue",
-        uv: 3300,
+        uv: 300,
         pv: 1398,
         amt: 2210,
     },
     {
         name: "Wed",
-        uv: 4000,
+        uv: 100,
         pv: 9800,
         amt: 2290,
     },
     {
         name: "Thu",
-        uv: 2780,
+        uv: 210,
         pv: 3908,
         amt: 2000,
     },
     {
         name: "Fri",
-        uv: 1890,
+        uv: 190,
         pv: 4800,
         amt: 2181,
     },
     {
         name: "Sat",
-        uv: 2390,
+        uv: 390,
         pv: 3800,
         amt: 2500,
     },
     {
         name: "Sun",
-        uv: 3490,
+        uv: 490,
         pv: 4300,
         amt: 2100,
     },
 ];
 
 export default class Example extends PureComponent {
-    static jsfiddleUrl = "https://jsfiddle.net/alidingling/Lrffmzfc/";
-
     render() {
         return (
-            <AreaChart
-                width={200}
-                height={80}
-                data={data}
-                // margin={{
-                //     top: 10,
-                //     right: 30,
-                //     left: 0,
-                //     bottom: 0,
-                // }}
-            >
+            <AreaChart width={300} height={100} data={data}>
                 <defs>
-                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                    <linearGradient id="colorUv3" x1="0" y1="0" x2="0" y2="1">
                         <stop
                             offset="5%"
-                            stopColor="#f82c2c"
-                            stopOpacity={0.3}
+                            stopColor="#42d674"
+                            stopOpacity={0.8}
                         />
                         <stop
                             offset="95%"
-                            stopColor="#f82c2c"
+                            stopColor="#42d674"
                             stopOpacity={0}
                         />
                     </linearGradient>
@@ -82,9 +70,9 @@ export default class Example extends PureComponent {
                 <Area
                     type="monotone"
                     dataKey="uv"
-                    stroke="#f82c2c"
+                    stroke={null}
                     fillOpacity={1}
-                    fill="url(#colorUv)"
+                    fill="url(#colorUv3)"
                 />
             </AreaChart>
         );

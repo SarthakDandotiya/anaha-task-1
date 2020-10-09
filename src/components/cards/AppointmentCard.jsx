@@ -18,6 +18,7 @@ const AppointmentCard = () => {
                     style={{
                         marginRight: "8px",
                         color: "#2379db",
+                        lineHeight: "24px",
                     }}
                 >
                     10AM - 11AM

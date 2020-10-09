@@ -3,9 +3,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .main-analytics-right {
     margin-left: 32px;
+}
+
+.main-analytics-right-bottom {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,13 +1,5 @@
 import React, { PureComponent } from "react";
-import {
-    LineChart,
-    Line,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-} from "recharts";
+import { LineChart, Line, XAxis, Tooltip } from "recharts";
 
 const data = [
     {

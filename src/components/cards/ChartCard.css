@@ -14,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    /* color: #505050; */
 }
 
 /* .small-chart-card-info p,
